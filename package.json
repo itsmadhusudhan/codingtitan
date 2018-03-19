@@ -6,6 +6,11 @@
   "author": "Madhusudhan R",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
   "dependencies": {
     "gatsby": "^1.9.237",
     "gatsby-link": "^1.6.39"
