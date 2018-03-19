@@ -1,0 +1,13 @@
+{
+  "name": "codingtitan",
+  "version": "1.0.0",
+  "description": "Blog for programmers by a programmer to teach to be one with the code",
+  "main": "index.js",
+  "author": "Madhusudhan R",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gatsby": "^1.9.237",
+    "gatsby-link": "^1.6.39"
+  }
+}
