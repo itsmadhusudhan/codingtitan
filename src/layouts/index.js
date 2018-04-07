@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Coding Titan" />
     <div>{children()}</div>
   </div>
 );
