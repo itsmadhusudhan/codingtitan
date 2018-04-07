@@ -17,6 +17,7 @@ class Titan extends React.Component{
       </div>
       <div>
         <Link to="/about/">About</Link>
+        <Link to="/templates/blog-post/">template</Link>        
       </div>
       </Container>
     )
