@@ -1,24 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Coding Titan`,
-    author: `Madhusudhan`
+    title: 'Coding Titan',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: 'pages',
+      },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        plugins: [] // just in case those previously mentioned remark plugins sound cool :)
-      }
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
     },
-    `gatsby-plugin-netlify` // make sure to put last in the array
-  ]
-};
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+  ],
+}
